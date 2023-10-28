@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 2rem 0;
+}
+
+.card {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+}
+
+.card button:active {
+  transform: scale(0.90);
+}
+
+.card span {
+  font-size: 2rem;
+}
