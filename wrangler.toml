@@ -1,4 +1,4 @@
-name = "bumblebee-react"
+name = "hono-react-ssr"
 main = "server.ts"
 compatibility_date = "2023-09-20"
 
