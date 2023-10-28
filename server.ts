@@ -12,7 +12,6 @@ import {
 import { SSRRender } from "src/entry-server";
 import assetManifest from "__STATIC_CONTENT_MANIFEST";
 import { cache } from "hono/cache";
-import { sleep } from "@app/utils/sleep";
 
 type Bindings = {
   __STATIC_CONTENT: KVNamespace;
@@ -39,7 +38,6 @@ app
     const url = "https://jsonplaceholder.typicode.com/posts";
     const response = await fetch(url);
     const result: Data[] = await response.json();
-    await sleep(1000);
     return c.json(result);
   })
   .get("/assets/*", async (c) => {
